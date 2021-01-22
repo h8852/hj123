@@ -190,8 +190,9 @@
                 }
                 
             });
-            
-             $(window).scroll(function(){
+             var ww=$(window).width();
+            if(ww<=900){
+                $(window).scroll(function(){
                  var height=$(document).scrollTop();
                 
                  if(height>100){
@@ -202,6 +203,10 @@
                      $("#topNav").show();
                  }
              });
+            }
+            
+            
+             
             
         });
     
